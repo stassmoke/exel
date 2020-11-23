@@ -16,7 +16,6 @@ const jsLoaders = () => {
             options: {
                 presets: ['@babel/preset-env']
             }
-
         }
     ]
 
@@ -85,8 +84,7 @@ module.exports = {
             {
                 test: /\.js$/,
                 exclude: /node_modules/,
-                use: jsLoaders(),
-
+                use: jsLoaders()
             }
         ]
     }
